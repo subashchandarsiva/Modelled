@@ -1,28 +1,24 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-bootstrap";
+// import Cards from "./Cards";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import { Button } from "react-bootstrap";
+import Test from "./Test";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {/* <header className="App-header">
         <Button variant="primary" className="mr-2">
           Primary
         </Button>
-      </header>
+        <Cards value="Subash" />
+      </header> */}
+      <Test
+        Name="Subash"
+        Title="King of Pirates"
+        Achievments="Won against Warlords"
+      />
     </div>
   );
 }
