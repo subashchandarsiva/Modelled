@@ -2,8 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the profile and table', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(getByText('Subash')).toBeInTheDocument();
+  expect(getByText('King of Pirates')).toBeInTheDocument();
+  expect(getByText('@mdo')).toBeInTheDocument();
 });
